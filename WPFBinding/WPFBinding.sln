@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFEntityFW", "WFEntityFW\WFEntityFW.csproj", "{F4894C17-F77E-4AB3-8F5D-43268BFA090C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFBinding", "WPFBinding\WPFBinding.csproj", "{8FBC7262-E805-4368-AA17-4B6E89D279EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4894C17-F77E-4AB3-8F5D-43268BFA090C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4894C17-F77E-4AB3-8F5D-43268BFA090C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4894C17-F77E-4AB3-8F5D-43268BFA090C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4894C17-F77E-4AB3-8F5D-43268BFA090C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FBC7262-E805-4368-AA17-4B6E89D279EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FBC7262-E805-4368-AA17-4B6E89D279EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FBC7262-E805-4368-AA17-4B6E89D279EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FBC7262-E805-4368-AA17-4B6E89D279EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {599BB1F0-5459-4152-B3DA-B746EF8FE90A}
+		SolutionGuid = {BF3353D3-D99F-4201-92FA-21AD3DC87586}
 	EndGlobalSection
 EndGlobal

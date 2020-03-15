@@ -12,7 +12,7 @@ namespace WFEntityFW
 {
     public partial class Form1 : Form
     {
-        KteamEntities db = new KteamEntities();
+        TestEntityEntities db = new TestEntityEntities();
 
         public Form1()
         {
@@ -32,8 +32,8 @@ namespace WFEntityFW
         void LoadData()
         {
             var res = from c in db.SinhViens
-                      //where c.ID <= 2
-                      //select new { ID = c.ID, Name = c.Name, Lop = c.Lop.Name };
+                          //where c.ID <= 2
+                          //select new { ID = c.ID, Name = c.Name, Lop = c.Lop.Name };
                       select c;
             dtgvShow.DataSource = res.ToList();
         }

@@ -13,10 +13,10 @@ namespace WFEntityFW
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class KteamEntities : DbContext
+    public partial class TestEntityEntities : DbContext
     {
-        public KteamEntities()
-            : base("name=KteamEntities")
+        public TestEntityEntities()
+            : base("name=TestEntityEntities")
         {
         }
     

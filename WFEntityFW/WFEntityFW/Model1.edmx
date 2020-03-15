@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="KteamModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="TestEntityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Lop">
           <Key>
             <PropertyRef Name="ID" />
@@ -20,7 +20,7 @@
           <Property Name="Name" Type="varchar" MaxLength="100" />
           <Property Name="IDLop" Type="int" Nullable="false" />
         </EntityType>
-        <Association Name="FK__SinhVien__IDLop__4D94879B">
+        <Association Name="FK__SinhVien__IDLop__3B75D760">
           <End Role="Lop" Type="Self.Lop" Multiplicity="1" />
           <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="*" />
           <ReferentialConstraint>
@@ -32,10 +32,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="KteamModelStoreContainer">
+        <EntityContainer Name="TestEntityModelStoreContainer">
           <EntitySet Name="Lop" EntityType="Self.Lop" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SinhVien" EntityType="Self.SinhVien" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__SinhVien__IDLop__4D94879B" Association="Self.FK__SinhVien__IDLop__4D94879B">
+          <AssociationSet Name="FK__SinhVien__IDLop__3B75D760" Association="Self.FK__SinhVien__IDLop__3B75D760">
             <End Role="Lop" EntitySet="Lop" />
             <End Role="SinhVien" EntitySet="SinhVien" />
           </AssociationSet>
@@ -44,14 +44,14 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="KteamModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="TestEntityModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Lop">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="SinhViens" Relationship="Self.FK__SinhVien__IDLop__4D94879B" FromRole="Lop" ToRole="SinhVien" />
+          <NavigationProperty Name="SinhViens" Relationship="Self.FK__SinhVien__IDLop__3B75D760" FromRole="Lop" ToRole="SinhVien" />
         </EntityType>
         <EntityType Name="SinhVien">
           <Key>
@@ -60,9 +60,9 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="IDLop" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Lop" Relationship="Self.FK__SinhVien__IDLop__4D94879B" FromRole="SinhVien" ToRole="Lop" />
+          <NavigationProperty Name="Lop" Relationship="Self.FK__SinhVien__IDLop__3B75D760" FromRole="SinhVien" ToRole="Lop" />
         </EntityType>
-        <Association Name="FK__SinhVien__IDLop__4D94879B">
+        <Association Name="FK__SinhVien__IDLop__3B75D760">
           <End Role="Lop" Type="Self.Lop" Multiplicity="1" />
           <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="*" />
           <ReferentialConstraint>
@@ -74,10 +74,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="KteamEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="TestEntityEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Lops" EntityType="Self.Lop" />
           <EntitySet Name="SinhViens" EntityType="Self.SinhVien" />
-          <AssociationSet Name="FK__SinhVien__IDLop__4D94879B" Association="Self.FK__SinhVien__IDLop__4D94879B">
+          <AssociationSet Name="FK__SinhVien__IDLop__3B75D760" Association="Self.FK__SinhVien__IDLop__3B75D760">
             <End Role="Lop" EntitySet="Lops" />
             <End Role="SinhVien" EntitySet="SinhViens" />
           </AssociationSet>
@@ -87,9 +87,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="KteamModelStoreContainer" CdmEntityContainer="KteamEntities">
+        <EntityContainerMapping StorageEntityContainer="TestEntityModelStoreContainer" CdmEntityContainer="TestEntityEntities">
           <EntitySetMapping Name="Lops">
-            <EntityTypeMapping TypeName="KteamModel.Lop">
+            <EntityTypeMapping TypeName="TestEntityModel.Lop">
               <MappingFragment StoreEntitySet="Lop">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -97,7 +97,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SinhViens">
-            <EntityTypeMapping TypeName="KteamModel.SinhVien">
+            <EntityTypeMapping TypeName="TestEntityModel.SinhVien">
               <MappingFragment StoreEntitySet="SinhVien">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />

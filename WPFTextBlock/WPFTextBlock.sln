@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFEntityFW", "WFEntityFW\WFEntityFW.csproj", "{F4894C17-F77E-4AB3-8F5D-43268BFA090C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFTextBlock", "WPFTextBlock\WPFTextBlock.csproj", "{BED77C09-1578-4F02-BABC-EABF6BF436EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4894C17-F77E-4AB3-8F5D-43268BFA090C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4894C17-F77E-4AB3-8F5D-43268BFA090C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4894C17-F77E-4AB3-8F5D-43268BFA090C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4894C17-F77E-4AB3-8F5D-43268BFA090C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED77C09-1578-4F02-BABC-EABF6BF436EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED77C09-1578-4F02-BABC-EABF6BF436EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED77C09-1578-4F02-BABC-EABF6BF436EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED77C09-1578-4F02-BABC-EABF6BF436EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {599BB1F0-5459-4152-B3DA-B746EF8FE90A}
+		SolutionGuid = {BF02BFC9-025F-4558-83AC-49EFDD5EBD49}
 	EndGlobalSection
 EndGlobal
